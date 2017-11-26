@@ -40,6 +40,7 @@
     var $this = $(this),
       url = $this.attr('data-url'),
       encodedUrl = encodeURIComponent(url),
+      telegramEncodedUrl = encodeURIComponent("https://t.me/iv?url=" + url + "&rhash=1cf07d958547d8"),
       id = 'article-share-box-' + $this.attr('data-id'),
       offset = $this.offset();
 
@@ -60,7 +61,7 @@
 //            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
 //            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
             '<a href="https://vk.com/share.php?url=' + encodedUrl + '" class="article-share-vk" target="_blank" title="VK"></a>',
-            '<a href="https://telegram.me/share/url?url=' + encodedUrl + '" class="article-share-telegram" target="_blank" title="Telegram"></a>',
+            '<a href="https://t.me/share/url?url=' + telegramEncodedUrl + '" class="article-share-telegram" target="_blank" title="Telegram"></a>',
           '</div>',
         '</div>'
       ].join('');

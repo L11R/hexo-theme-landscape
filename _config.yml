@@ -3,7 +3,7 @@ menu:
   Главная: /
   Боты: /bots
   Архив: /archives
-rss: /atom.xml
+rss: /rss2.xml
 
 # Content
 excerpt_link: Читать Далее
@@ -40,4 +40,4 @@ fb_app_id:
 
 vk: lord.protector
 tg: kraso
-gh: Lord-Protector
+gh: L11R
